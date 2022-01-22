@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/po"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="po1"
+        android:scaleType="centerInside"
+        app:contentDescription="Помощь"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/po" />
+
+    <ImageButton
+        android:id="@+id/sl"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="sl1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Службы"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sl" />
+
+    <ImageButton
+        android:id="@+id/pi"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="pi1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Поиск"
+        app:layout_constraintEnd_toStartOf="@+id/pg"
+        app:layout_constraintStart_toEndOf="@+id/po"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pi" />
+
+    <ImageButton
+        android:id="@+id/ob"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="ob1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Общение"
+        app:layout_constraintBottom_toTopOf="@+id/sl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/po"
+        app:srcCompat="@drawable/ob" />
+
+    <ImageButton
+        android:id="@+id/af"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="af1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Афиша"
+        app:layout_constraintBottom_toTopOf="@+id/is"
+        app:layout_constraintEnd_toStartOf="@+id/ka"
+        app:layout_constraintStart_toEndOf="@+id/ob"
+        app:layout_constraintTop_toBottomOf="@+id/pi"
+        app:srcCompat="@drawable/af" />
+
+    <ImageButton
+        android:id="@+id/is"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="is1"
+        android:scaleType="fitCenter"
+        app:contentDescription="История"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pe"
+        app:layout_constraintStart_toEndOf="@+id/sl"
+        app:srcCompat="@drawable/is" />
+
+    <ImageButton
+        android:id="@+id/pg"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="pg1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Погода"
+        app:layout_constraintEnd_toStartOf="@+id/ra"
+        app:layout_constraintStart_toEndOf="@+id/pi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pg" />
+
+    <ImageButton
+        android:id="@+id/ka"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="ka1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Карты"
+        app:layout_constraintBottom_toTopOf="@+id/pe"
+        app:layout_constraintEnd_toStartOf="@+id/to"
+        app:layout_constraintStart_toEndOf="@+id/af"
+        app:layout_constraintTop_toBottomOf="@+id/pg"
+        app:srcCompat="@drawable/ka" />
+
+    <ImageButton
+        android:id="@+id/pe"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="pe1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Поездки"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/us"
+        app:layout_constraintStart_toEndOf="@+id/is"
+        app:srcCompat="@drawable/pe" />
+
+    <ImageButton
+        android:id="@+id/ra"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="ra1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Работа"
+        app:layout_constraintEnd_toStartOf="@+id/fo"
+        app:layout_constraintStart_toEndOf="@+id/pg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ra" />
+
+    <ImageButton
+        android:id="@+id/to"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="to1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Товары"
+        app:layout_constraintBottom_toTopOf="@+id/us"
+        app:layout_constraintEnd_toStartOf="@+id/vi"
+        app:layout_constraintStart_toEndOf="@+id/ka"
+        app:layout_constraintTop_toBottomOf="@+id/ra"
+        app:srcCompat="@drawable/to" />
+
+    <ImageButton
+        android:id="@+id/us"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="us1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Услуги"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mu"
+        app:layout_constraintStart_toEndOf="@+id/pe"
+        app:srcCompat="@drawable/us" />
+
+    <ImageButton
+        android:id="@+id/fo"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="fo1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Фото"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fo" />
+
+    <ImageButton
+        android:id="@+id/vi"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="vi1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Видео"
+        app:layout_constraintBottom_toTopOf="@+id/mu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fo"
+        app:srcCompat="@drawable/vi" />
+
+    <ImageButton
+        android:id="@+id/mu"
+        android:layout_width="59pt"
+        android:layout_height="59pt"
+        android:background="@color/bg"
+        android:onClick="mu1"
+        android:scaleType="fitCenter"
+        app:contentDescription="Музыка"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/mu" />
+
+
+</android.support.constraint.ConstraintLayout>
